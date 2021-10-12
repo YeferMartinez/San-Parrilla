@@ -6,15 +6,17 @@
       class="indigo lighten-1 white--text text-center"
     >
       <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-          icon
-        >
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
+        <v-btn icon href="https://es-la.facebook.com/" target="_blank">
+          <v-icon size="24px">{{ "mdi-facebook" }}</v-icon>
+        </v-btn>
+        <v-btn icon href="https://twitter.com/?lang=es" target="_blank">
+          <v-icon size="24px">{{ "mdi-twitter" }}</v-icon>
+        </v-btn>
+        <v-btn icon href="https://co.linkedin.com" target="_blank">
+          <v-icon size="24px">{{ "mdi-linkedin" }}</v-icon>
+        </v-btn>
+        <v-btn icon href="https://www.instagram.com/?hl=es" target="_blank">
+          <v-icon size="24px">{{ "mdi-instagram" }}</v-icon>
         </v-btn>
       </v-card-text>
 
@@ -34,14 +36,6 @@
 <script>
   export default {
       name: 'Footer',
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
   }
 </script>
 
